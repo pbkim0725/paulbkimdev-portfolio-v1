@@ -1,12 +1,12 @@
-import { AppProps } from 'next/dist/next-server/lib/router/router';
-import React, { ReactElement } from 'react';
+import React from 'react';
+import { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 
 /* Global Styling */
 import GlobalStyle from '../styles/GlobalStyle';
 import { theme } from '../styles/theme';
 
-export default function App({ Component, pageProps }: AppProps): ReactElement {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <GlobalStyle />
@@ -15,4 +15,6 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
       </ThemeProvider>
     </>
   );
-}
+};
+
+export default App;
