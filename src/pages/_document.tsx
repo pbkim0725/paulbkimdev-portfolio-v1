@@ -43,6 +43,11 @@ export default class MyDocument extends Document {
         <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
         <meta name="viewport" content="width=device-width" />
+        <link
+          href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+          rel="stylesheet"
+          type="text/css"
+        />
       </Head>
       <body>
         <Main />
