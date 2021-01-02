@@ -8,6 +8,7 @@ import { theme } from '../styles/theme';
 
 /* Layouts */
 import { Header } from '../layouts/Header';
+import { Footer } from '../layouts/Footer';
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
@@ -16,6 +17,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
       <ThemeProvider theme={theme}>
         <Header />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </>
   );

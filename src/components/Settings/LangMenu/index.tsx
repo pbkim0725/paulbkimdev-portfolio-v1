@@ -10,6 +10,7 @@ import {
   StyledMenu,
   StyledLanguageSelection,
   StyledLink,
+  StyledWrapper,
 } from './LangMenu.styled';
 
 export const LangMenu: React.FC = (): React.ReactElement & React.ReactNode => {
@@ -39,10 +40,12 @@ export const LangMenu: React.FC = (): React.ReactElement & React.ReactNode => {
       // interactiveBorder={0}
       // delay={100}
     >
-      <StyledLink>
-        {router.locale === 'en-US' ? 'EN' : 'KO'}
-        <AiFillCaretDown />
-      </StyledLink>
+      <StyledWrapper>
+        <StyledLink>
+          {router.locale === 'en-US' ? 'EN' : 'KO'}
+          <AiFillCaretDown />
+        </StyledLink>
+      </StyledWrapper>
     </LazyTippy>
   );
 };
