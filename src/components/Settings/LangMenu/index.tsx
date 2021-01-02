@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { AiFillCaretDown } from 'react-icons/ai';
+import { MdLanguage } from 'react-icons/md';
 
 /* Components */
 import { LazyTippy } from './LazyTippy';
@@ -42,6 +43,7 @@ export const LangMenu: React.FC = (): React.ReactElement & React.ReactNode => {
     >
       <StyledWrapper>
         <StyledLink>
+          <MdLanguage />
           {router.locale === 'en-US' ? 'EN' : 'KO'}
           <AiFillCaretDown />
         </StyledLink>

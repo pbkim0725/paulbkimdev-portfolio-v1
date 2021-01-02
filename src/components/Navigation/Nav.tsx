@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { StyledNav, StyledUl } from './Nav.styled';
 /* Import Sub-Components */
 import Burger from './Burger';
-import Menu from './Drawer-Menu';
+import Menu from './Menu';
 /* Import Hooks */
 import { useMedia } from '../../hooks/useMedia';
 import { useDisclosure } from '../../hooks/useDisclosure';
@@ -73,7 +73,7 @@ export const Nav: React.FC = () => {
 
   return (
     <StyledNav ref={node}>
-      {size === 'desktop' || size === 'tabletL' ? (
+      {size === 'desktop' ? (
         renderedMenuItems()
       ) : (
         <Burger open={isOpen} setOpen={setOpen} />

@@ -4,12 +4,12 @@ export const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   padding: 0.25rem 0.75rem;
   border-radius: 8px;
   margin-right: ${({ theme }) => theme.margins[6]};
-  /* color: ${({ theme }) => theme.colors.primary}; */
+  background-color: ${({ theme }) => theme.colors.primaryLight};
+  color: ${({ theme }) => theme.colors.white};
   font-weight: ${({ theme }) => theme.fonts.weight.bold};
   cursor: pointer;
   text-align: center;

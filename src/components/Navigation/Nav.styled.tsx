@@ -17,22 +17,26 @@ export const StyledUl = styled.ul`
       font-size: ${theme.fonts.size[1]};
 
       li {
-        padding: 16px 24px;
+        padding: 0px 0px;
+        width: 7rem;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: ease 0.2s;
         height: inherit;
+        text-align: center;
       }
 
       a {
+        width: 90px;
         color: ${theme.colors.black};
         font-weight: ${theme.fonts.weight.bold};
+        /* transition: ease 0.2s; */
       }
 
       a:hover {
         border-bottom: solid 5px ${theme.colors.primaryLight};
-        color: ${theme.colors.primaryDark};
+        color: ${theme.colors.primary};
       }
     `;
   }}
