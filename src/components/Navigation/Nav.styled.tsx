@@ -29,7 +29,7 @@ export const StyledUl = styled.ul`
 
       a {
         width: 90px;
-        color: ${theme.colors.black};
+        color: ${theme.colors.darkGray};
         font-weight: ${theme.fonts.weight.bold};
         /* transition: ease 0.2s; */
       }

@@ -4,7 +4,7 @@ import { StyledMenu } from './Menu.styled';
 import { disclosurePropTypes } from '../types';
 import { useRouter } from 'next/router';
 
-const Menu: React.FC<disclosurePropTypes> = ({ open }) => {
+const Menu: React.FC<disclosurePropTypes> = ({ open, setOpen }) => {
   const [hover, setHover] = useState<boolean | string>(false);
   const router = useRouter();
 
@@ -14,6 +14,10 @@ const Menu: React.FC<disclosurePropTypes> = ({ open }) => {
         <a
           onMouseEnter={() => setHover('about')}
           onMouseLeave={() => setHover(false)}
+          onClick={() => setOpen(false)}
+          onKeyPress={() => setOpen(false)}
+          role="button"
+          tabIndex={0}
         >
           {router.locale === 'ko' && hover === 'about' ? '소개' : 'About'}
         </a>
@@ -22,6 +26,10 @@ const Menu: React.FC<disclosurePropTypes> = ({ open }) => {
         <a
           onMouseEnter={() => setHover('works')}
           onMouseLeave={() => setHover(false)}
+          onClick={() => setOpen(false)}
+          onKeyPress={() => setOpen(false)}
+          role="button"
+          tabIndex={0}
         >
           {router.locale === 'ko' && hover === 'works' ? '포트폴리오' : 'Works'}
         </a>
@@ -30,6 +38,10 @@ const Menu: React.FC<disclosurePropTypes> = ({ open }) => {
         <a
           onMouseEnter={() => setHover('blog')}
           onMouseLeave={() => setHover(false)}
+          onClick={() => setOpen(false)}
+          onKeyPress={() => setOpen(false)}
+          role="button"
+          tabIndex={0}
         >
           {router.locale === 'ko' && hover === 'blog' ? '블로그' : 'Blog'}
         </a>
@@ -38,6 +50,10 @@ const Menu: React.FC<disclosurePropTypes> = ({ open }) => {
         <a
           onMouseEnter={() => setHover('contact')}
           onMouseLeave={() => setHover(false)}
+          onClick={() => setOpen(false)}
+          onKeyPress={() => setOpen(false)}
+          role="button"
+          tabIndex={0}
         >
           {router.locale === 'ko' && hover === 'contact' ? '문의' : 'Contact'}
         </a>
