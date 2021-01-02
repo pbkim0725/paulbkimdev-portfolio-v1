@@ -6,7 +6,7 @@ const StyledWrapper = styled.div`
   margin-right: ${({ theme }) => theme.margins[6]};
 `;
 
-export const Setting: React.FC = () => {
+export const Settings: React.FC = () => {
   return (
     <StyledWrapper>
       <button>hello</button>
@@ -14,4 +14,4 @@ export const Setting: React.FC = () => {
   );
 };
 
-export default Setting;
+export default Settings;
