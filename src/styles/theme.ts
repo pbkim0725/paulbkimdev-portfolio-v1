@@ -64,10 +64,10 @@ const borderRadius = {
 };
 
 const boxShadow = {
-  base: '0 1px 0 rgba(27, 31, 35, 0.04)',
-  md: '0 3px 6px rgba(149, 157, 165, 0.15)',
-  lg: '0 8px 24px rgba(149, 157, 165, 0.2)',
-  xLg: '0 12px 48px rgba(149, 157, 165, 0.3)',
+  base: '0 1px 0 rgba(27, 31, 35, 0.15)',
+  md: '0 2px 4px rgba(149, 157, 165, 0.4)',
+  lg: '0 8px 24px rgba(149, 157, 165, 0.45)',
+  xLg: '0 12px 48px rgba(149, 157, 165, 0.5)',
   inset: 'inset 0 1px 0 rgba(255, 255, 255, 0.25)',
 };
 

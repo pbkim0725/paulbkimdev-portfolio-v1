@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import styled from 'styled-components';
 
 export const StyledMenu: any = styled.nav`
@@ -20,6 +21,7 @@ export const StyledMenu: any = styled.nav`
   }
 
   a {
+    outline-style: none;
     font-size: 2rem;
     text-transform: uppercase;
     padding: ${({ theme }) => theme.paddings[5]};
