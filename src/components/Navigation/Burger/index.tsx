@@ -1,9 +1,10 @@
 import React from 'react';
+import { disclosurePropTypes } from '../types';
 import { StyledBurger } from './Burger.styled';
 
-const Burger = (): JSX.Element => {
+const Burger: React.FC<disclosurePropTypes> = ({ open, setOpen }) => {
   return (
-    <StyledBurger>
+    <StyledBurger open={open} onClick={() => setOpen(!open)}>
       <div />
       <div />
       <div />

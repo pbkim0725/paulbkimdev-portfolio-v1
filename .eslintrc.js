@@ -14,6 +14,13 @@ module.exports = {
   ignorePatterns: ['node_modules/*', '.next/*', '.out/*', '!.prettierrc.js'], // We don't want to lint generated files nor node_modules, but we want to lint .prettierrc.js (ignored by default by eslint)
   extends: ['eslint:recommended'],
   overrides: [
+    //This config will fend off all the eslint requirements for styled components.
+    {
+      files: ['**.styled.tsx', '**.styled.ts'],
+      rules: {
+        '@typescript-eslint/no-explicit-any': 'off',
+      },
+    },
     // This configuration will apply only to TypeScript files
     {
       files: ['**/*.ts', '**/*.tsx'],

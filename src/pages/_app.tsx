@@ -7,7 +7,7 @@ import GlobalStyle from '../styles/GlobalStyle';
 import { theme } from '../styles/theme';
 
 /* Layouts */
-import { Header } from '../components/Header';
+import { Header } from '../layouts/Header';
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
