@@ -53,6 +53,7 @@ const fonts = {
   lh: {
     condensed: 1.25,
     default: 1.5,
+    distinct: 2.0,
   },
 };
 
